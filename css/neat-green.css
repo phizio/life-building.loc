@@ -443,7 +443,7 @@ body {
     text-decoration: none
 }
 
-.btn {
+.btn, #accordion .accordion-toggle {
     -webkit-transition: background .3s;
     transition: background .3s
 }
@@ -721,8 +721,8 @@ h1.text-right, h2.text-right, h3.text-right, h4.text-right {
 }
 
 .navbar.scroll .container#top-container {
-	margin-top: 10px;
 	position: static;
+	margin-top: 10px;
 }
 
 .navbar .nav.navbar-nav > li > a {
@@ -1825,4 +1825,24 @@ footer hr {
 }
 .list-group-submenu {
     margin-left:20px;
+}
+
+#accordion .accordion-toggle {
+	float: right;
+    border-radius: 4px;
+    border: 1px solid #208e4e;
+    padding: 6px 12px;
+    margin: -34px 0 34px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#accordion .accordion-toggle:hover, #accordion .accordion-toggle:focus, #accordion .accordion-toggle:active {
+	color: #fff;
+	background-color: #449d44;
+	border-color: #398439;
+}
+#accordion table tr td {
+	border: 1px solid #208e4e;
+	padding: 5px;
 }
