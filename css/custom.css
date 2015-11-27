@@ -1,0 +1,520 @@
+@import "http://webfonts.ru/import/ubuntu.css";
+@import "http://webfonts.ru/import/clearsans.css";
+
+body{
+    font-family: 'Clear Sans', sans-serif;
+}
+.navbar .nav.navbar-nav>li>a {
+    /*font-family: 'Ubuntu Condensed';*/
+}
+.navbar .nav.navbar-nav>li>a, .navbar .nav.navbar-nav>li>a:hover{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navbar.scroll .nav.navbar-nav>li>a, .navbar.scroll .nav.navbar-nav>li>a:hover {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.navbar .nav.navbar-nav>li.open>a, .navbar.scroll .nav.navbar-nav>li.open>a , .navbar.scroll .nav.navbar-nav>li.open>a:hover{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#logo_field {
+	font-size: 24px;
+	font-weight: bold;
+    text-decoration: none;
+	color:#444444;
+	margin-top:-40px;
+}
+#logo_field img {
+    display: inline-block;
+    height: 40px;
+    margin: -10px 10px -10px 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.navbar .navbar-brand {
+    padding-bottom: 30px;
+    -webkit-transition: padding .5s;
+    transition: padding .5s;
+    font-weight: bold;
+    color: inherit;
+    white-space: nowrap;
+}
+
+#top-container {
+    margin-top: 20px;
+}
+#callbacks {
+	float:right;
+	margin:0 0 10px 0;
+	padding:0;
+}
+#callbacks li {
+	display:block;
+	float: left;
+	list-style: none;
+	margin:8px;
+}
+#callbacks li > a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#2ecc71;
+}
+#callbacks li > a.btn {
+    color: white;
+    margin-top: -2px;
+}
+
+.c-green {color:#2ecc71;}
+
+/*Вкладка "Визит на стройку"*/
+.fixed-buttons {
+  position: fixed;
+  right: 0;
+  top: 60%;
+  margin-top: -177px;
+}
+.callback-link {
+  display: block;
+  width: 35px;
+  height: 172px;
+  background: url(../img/callback.png) 0 0 no-repeat;
+  box-shadow: 1px 1px 3px 3px rgba(0,0,0, 0.2);
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+
+.first-cont {
+    margin-top: 100px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.checkbox label {
+    padding-left: 0;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.news {
+    margin-top: 0;
+}
+.news-link div.col-md-6 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#flexslider_cont {
+    border: none;
+    margin-bottom: 10px;
+}
+#form_cont h3 {font-size: 20px;}
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+h1, h2, h3 {
+    border: none !important;
+}
+
+/* Responsive elements */
+
+/*Сужение меню по горизонтали*/
+@media screen and (max-width:1200px){
+    .navbar .nav.navbar-nav>li>a {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+}
+/*Уменьшение шрифтов верхней панели с лого и телефонами*/
+@media screen and (max-width:379px){
+    #callbacks li {margin: 1px;}
+    #callbacks li > a {font-size: 12px;}
+    #form_cont h3 {font-size: 18px;}
+    .projects_desc {font-size: 14px;}
+}
+@media screen and (min-width:380px) and (max-width:767px){
+    #callbacks li {margin: 2px;}
+    #callbacks li > a {font-size: 14px;}
+    #form_cont h3 {font-size: 20px;}
+    .projects_desc {font-size: 14px;}
+}
+@media screen and (min-width:768px) and (max-width:1200px){
+    #callbacks li {margin: 4px;}
+    #callbacks li > a {font-size: 16px;}
+    #logo_field {font-size: 22px;}
+    #logo_field img {height: 30px;}
+    #form_cont h3 {font-size: 18px;}
+    .projects_desc {font-size: 16px;}
+}
+
+.nav-header>ul {
+    margin-left: 20px;
+    zoom: 0.9;
+}
+.nav-stacked>li.active>a {
+    font-weight: bold;
+    background-color: #2ecc71;
+    color: white;
+}
+
+.thumb-pic {
+    width: 100%;
+}
+.caption.bordered.background-white {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sidebar-icon {
+    width: 30px;
+    height: 20px;
+    display: inline;
+    padding-right: 10px;
+}
+
+
+/* jssor slider */
+#slider_main_container {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 1140px;
+    height: 590px;
+    overflow: hidden;
+}
+#slider_loading {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.loading_bg {
+     filter: alpha(opacity=70); opacity:0.7;
+     position: absolute;
+     display: block;
+     background-color: #000;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height:100%;
+}
+.loading_spinner {
+    position: absolute;
+    display: block;
+    background: url(../img/loading.gif) no-repeat center center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height:100%;
+}
+
+.captionOrange, .captionBlack {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+}
+.captionOrange {
+    background: #EB5100;
+    background-color: rgba(235, 81, 0, 0.6);
+}
+.captionBlack {
+    font-size:16px;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+a.captionOrange, A.captionOrange:active, A.captionOrange:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+a.captionOrange:hover {
+    color: #eb5100;
+    text-decoration: underline;
+    background-color: #eeeeee;
+    background-color: rgba(238, 238, 238, 0.7);
+}
+.bricon {background: url(../img/browser-icons.png);}
+
+/* jssor slider arrow navigator skin 05 css */
+/* Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html */
+/*
+.jssora05l                  (normal)
+.jssora05r                  (normal)
+.jssora05l:hover            (normal mouseover)
+.jssora05r:hover            (normal mouseover)
+.jssora05l.jssora05ldn      (mousedown)
+.jssora05r.jssora05rdn      (mousedown)
+*/
+.jssora05l, .jssora05r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url(../img/a17.png) no-repeat;
+    overflow: hidden;
+}
+.jssora05l { background-position: -10px -40px; }
+.jssora05r { background-position: -70px -40px; }
+.jssora05l:hover { background-position: -130px -40px; }
+.jssora05r:hover { background-position: -190px -40px; }
+.jssora05l.jssora05ldn { background-position: -250px -40px; }
+.jssora05r.jssora05rdn { background-position: -310px -40px; }
+
+/* jssor slider bullet navigator skin 01 css */
+/* Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html */
+/*
+.jssorb01 div           (normal)
+.jssorb01 div:hover     (normal mouseover)
+.jssorb01 .av           (active)
+.jssorb01 .av:hover     (active mouseover)
+.jssorb01 .dn           (mousedown)
+*/
+.jssorb01 {
+    position: absolute;
+}
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 12px;
+    height: 12px;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    overflow: hidden;
+    cursor: pointer;
+    border: #000 1px solid;
+}
+.jssorb01 div { background-color: gray; }
+.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+.jssorb01 .av { background-color: #fff; }
+.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+/* jssor slider thumbnail navigator skin 02 css */
+/* Help: http://www.jssor.com/development/slider-with-thumbnail-navigator-jquery.html */
+/*
+.jssort02 .p            (normal)
+.jssort02 .p:hover      (normal mouseover)
+.jssort02 .p.pav        (active)
+.jssort02 .p.pdn        (mousedown)
+*/
+
+.jssort02 {
+    position: absolute;
+    /* size of thumbnail navigator container */
+    width: 140px;
+    height: 550px;
+    background-color: #a8ebc4;
+}
+
+.jssort02 .p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+}
+
+.jssort02 .t {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.jssort02 .w {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.jssort02 .c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 90px;
+    height: 90px;
+    /*border: #000 2px solid;*/
+    box-sizing: content-box;
+    background: url(../img/t01.png) -800px -800px no-repeat;
+    _background: none;
+}
+
+.jssort02 .pav .c {
+    top: 2px;
+    _top: 0px;
+    left: 2px;
+    _left: 0px;
+    width: 90px;
+    height: 90px;
+    /*border: #000 0px solid;*/
+    _border: #fff 2px solid;
+    background-position: 50% 50%;
+}
+
+.jssort02 .p:hover .c {
+    top: 0px;
+    left: 0px;
+    width: 92px;
+    height: 92px;
+    /*border: #fff 1px solid;*/
+    background-position: 50% 50%;
+}
+
+.jssort02 .p.pdn .c {
+    background-position: 50% 50%;
+    width: 90px;
+    height: 90px;
+    border: #000 2px solid;
+}
+
+* html .jssort02 .c, * html .jssort02 .pdn .c, * html .jssort02 .pav .c {
+    /* ie quirks mode adjust */
+    width /**/: 90px;
+    height /**/: 90px;
+}
+
+/* jssor slider thumbnail navigator skin 07 css */
+/*
+.jssort07 .p            (normal)
+.jssort07 .p:hover      (normal mouseover)
+.jssort07 .pav          (active)
+.jssort07 .pav:hover    (active mouseover)
+.jssort07 .pdn          (mousedown)
+*/
+.jssort07 {
+    position: absolute;
+    /* size of thumbnail navigator container */
+    width: 800px;
+    height: 90px;
+}
+
+.jssort07 .p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+}
+
+.jssort07 .i {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 90px;
+    height: 90px;
+    filter: alpha(opacity=80);
+    opacity: .8;
+}
+
+.jssort07 .p:hover .i, .jssort07 .pav .i {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.jssort07 .o {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 88px;
+    height: 88px;
+    border: 1px solid #000;
+    box-sizing: content-box;
+    transition: border-color .6s;
+    -moz-transition: border-color .6s;
+    -webkit-transition: border-color .6s;
+    -o-transition: border-color .6s;
+}
+
+.jssort07 .pav .o {
+    border-color: #0099ff;
+}
+
+.jssort07 .p:hover .o {
+    border-color: #fff;
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+}
+
+.jssort07 .p.pdn .o {
+    border-color: #0099ff;
+}
+
+* html .jssort07 .o {
+    /* ie quirks mode adjust */
+    width /**/: 90px;
+    height /**/: 90px;
+}
+
+/* jssor slider arrow navigator skin 11 css */
+/*
+.jssora11l                  (normal)
+.jssora11r                  (normal)
+.jssora11l:hover            (normal mouseover)
+.jssora11r:hover            (normal mouseover)
+.jssora11l.jssora11ldn      (mousedown)
+.jssora11r.jssora11rdn      (mousedown)
+*/
+.jssora11l, .jssora11r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+    background: url(../img/a11.png) no-repeat;
+    overflow: hidden;
+}
+
+.jssora11l {
+    background-position: -11px -41px;
+}
+
+.jssora11r {
+    background-position: -71px -41px;
+}
+
+.jssora11l:hover {
+    background-position: -131px -41px;
+}
+
+.jssora11r:hover {
+    background-position: -191px -41px;
+}
+
+.jssora11l.jssora11ldn {
+    background-position: -251px -41px;
+}
+
+.jssora11r.jssora11rdn {
+    background-position: -311px -41px;
+}
+
+.caption_photo {
+    position:absolute;
+    left:20px;
+    top: 330px;
+    height:30px;
+    padding: 0 5px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    background: #124f2c;
+    background-color: rgba(10, 100, 0, 0.6);
+}
+.cp_main {
+    top: 500px;
+}
